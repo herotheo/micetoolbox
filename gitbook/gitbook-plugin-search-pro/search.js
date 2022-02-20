@@ -59,7 +59,7 @@ require([
             var $title = $('<h3>');
 
             var $link = $('<a>', {
-                'href': gitbook.state.basePath + '/' + item.url + '?h=' + encodeURIComponent(res.query),
+                'href': item.url + '?h=' + encodeURIComponent(res.query),
                 'text': item.title,
                 'data-is-search': 1
             });
@@ -127,6 +127,15 @@ require([
     }
 
     function bindSearch() {
+        // Asynchronously load the index data
+        {
+            var url = state.basePath + "/search_plus_index.json";
+            $.getJSON(url).then(function(data) {
+                INDEX_DATA = data;
+                handleUpdate();
+            });
+        }
+
         // Bind DOM
         var $body = $('body');
 
@@ -157,10 +166,8 @@ require([
         $body.on('click', '#book-search-input input', function(e) {
             if (Object.keys(INDEX_DATA).length === 0) {
                 var url = state.basePath + "/search_plus_index.json";
-                console.log("start get json");
                 $.getJSON(url).then(function(data) {
                     INDEX_DATA = data;
-                    console.log('INDEX_DATA = ' + INDEX_DATA);
                     handleUpdate();
                 });
             }
