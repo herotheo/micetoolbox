@@ -2,31 +2,41 @@
 layout: home
 ---
 
-商用密码应用与检测工具箱集成网络上大部分的密码类工具，并且还支持网络上密码类工具中没有的算法和功能，全部符合国家标准，操作简单快捷。
+## 1.产品介绍
 
-## 适用范围
+商用密码应用与检测工具箱集成网络上大部分的密码类工具，并且还支持网络上密码类工具中没有的算法和功能，算法全部符合国家标准，操作简单快捷。用于密码设备选型阶段的产品确认；软件设计阶段的安全架构设计；开发阶段工程师接口调试；测试阶段对密码模块功能、接口和数据的分析测试；协助密码工程师进行流量深度分析；协助安全工程师进行数据识别、分析、破解；还可用于了解密码基础知识、密码应用、密码协议，并做为日常工作、学习、竞赛等的辅助工具。
 
-用于密码设备选型阶段的产品确认；软件设计阶段的安全架构设计；开发阶段工程师接口调试；测试阶段对密码模块功能、接口和数据的分析测试；协助密码工程师进行流量深度分析；协助安全工程师进行数据识别、分析、破解；还可用于了解密码基础知识、密码应用、密码协议，并做为日常工作、学习、竞赛等的辅助工具。
+## 2.应用场景
 
-## 与互联网工具的不同
 
-#### 互联网工具
 
-1. 在互联网上搜集的140款密码类软件或在线工具，90%没有准确描述其输入参数的格式要求。70%在100轮重复测试中包含错误的结果输出。50%仅在特定格式的输入时有效。
-2. 互联网工具在使用过程中存在数据伪造、泄漏等安全问题。
-3. 功能普遍单一，无法用于复杂的密码分析、网络场景中。
-4. 标准不统一，不同的工具检测出的结果不一样。
+## 3.产品优势
 
-#### 商用密码应用与检测工具箱
+1. 国家密码算法的全面支持
 
-1. 国密算法的支持，如SM1、SM2、SM3、SM4、SM9、SSF33、ZUC。
-2. 基于密码算法，流量分析和数据分析的融合，实现交叉引用，快速分析。
-3. 程序包括规范的参数定义，标准的输入输出格式，丰富的功能选项，全面的算法支持，并经过大量的计算结果验证。
-4. 流量分析支持数据包导入分析和实时监听分析，可自动绘制网络拓扑图、会话重组、协议分析、鉴别信息识别和破解、文件提取等。
-5. 流量分析可以进行动态密码分析，并将密码运算过程还原、结合密码数据上下文关联分析，并解决增加相应功能后的性能降低问题。
-6. 数据分析支持文件内容分析、数据格式分析、数据类型推测。
+   > SM1、SM2、SM3、SM4、SM9、SSF33、ZUC
 
-## 模块功能介绍
+2. 操作简单易懂
+
+   > 界面设计简洁明了，并且配有算法解释和资料，有助于了解学习。
+
+3. 部署方式简单灵活
+
+   > 程序支持灵活的部署方式，包括单机模式和C/S模式。单机模式在授权的电脑中运行。C/S模式支持脱机使用。
+
+4. 准确
+
+   > 算法根据标准实现包括规范的参数定义，标准的输入输出格式，丰富的功能选项，并经过大量的计算结果验证。
+
+5. 功能丰富
+
+   > 程序包括密码算法应用模块、流量分析模块、数据分析模块，并将三者融合，实现交叉引用快速分析。
+
+6. 易扩展、易维护
+
+   > 采用插件式开发，结构灵活，很容易对程序进行扩展，并且支持不同的团队并行开发。
+
+## 4.产品功能
 
 * #### 密码应用
 
@@ -82,43 +92,6 @@ layout: home
 
      > 工具箱中包含大量的参考资料，标准文件，对于了解密码应用，了解数据定义等，帮助很大。
 
-## 部署方式
+## 其它
 
-程序支持灵活的部署方式，包括单机模式和C/S模式。单机模式在授权的电脑中运行。C/S模式支持脱机使用。
-
-![部署](image/部署-16484510463671.png)
-
-## Code highlight
-
-The code highlight style is configurable the following entry in `_config.yaml`:
-
-```yaml
-syntax_highlighter_style: colorful
-```
-
-The default code highlight style is `colorful`, the full supported styles can be found from [the rouge repository][6]. Customized
-style can be added to [./gitbook/rouge/](./gitbook/rouge/).
-
-## How to generate TOC
-
-The jekyll-gitbook theme leverages [jekyll-toc][4] to generate the *Contents* for the page.
-The TOC feature is not enabled by default. To use the TOC feature, modify the TOC
-configuration in `_config.yml`:
-
-```yaml
-toc:
-    enabled: true
-```
-
-## License
-
-This work is open sourced under the Apache License, Version 2.0.
-
-Copyright 2019 Tao He.
-
-[1]: https://pages.github.com
-[2]: https://pages.github.com/themes
-[3]: https://github.com/sighingnow/jekyll-gitbook/fork
-[4]: https://github.com/allejo/jekyll-toc
-[5]: https://github.com/gitbook-plugins/gitbook-plugin-search-pro
-[6]: https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/themes
+其它产品:[新渡-国密WEB应用安全网关](https://www.ailawuyou.com/GMPortalDocs/)
