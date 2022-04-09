@@ -1,77 +1,95 @@
-# Jekyll GitBook
+# 商用密码应用与检测工具箱
 
-Make Jelly site have a GitBook look!
+## 1.产品介绍
 
-## Demo
+商用密码应用与检测工具箱是国内仅有的一款包含大量的国外密码算法实现，以及全部国内密码算法的应用软件，而且仍在不停地有新的算法添加进去。同时工具箱包含了非常丰富的密码算法应用分析、协议分析、数据分析功能，并将各个模块融会贯通，对科研人员、安全系统开发设计测试工程师、商用密码检测工程师、密码初学者等带来极大的便利和帮助。
 
-Live demo on Github Pages: [https://sighingnow.github.io/jekyll-gitbook](https://sighingnow.github.io/jekyll-gitbook)
+## 2.应用场景
 
-[![Jekyll Themes](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/jekyll-gitbook/)
 
-## Why Jekyll with GitBook
 
-GitBook is an amazing frontend style to present and organize contents (such as book chapters
-and blogs) on Web. The typical to deploy GitBook at [Github Pages][1]
-is building HTML files locally and then push to Github repository, usually to the `gh-pages`
-branch. It's quite annoying to repeat such workload and make it hard for people do version
-control via git for when there are generated HTML files to be staged in and out.
+## 3.产品优势
 
-This theme takes style definition out of generated GitBook site and provided the template
-for Jekyll to rendering markdown documents to HTML, thus the whole site can be deployed
-to [Github Pages][1] without generating and uploading HTML bundle every time when there are
-changes to the original repo.
+1. 国家密码算法的全面支持
 
-## How to Get Started
+   > SM1、SM2、SM3、SM4、SM9、SSF33、ZUC
 
-This theme can be used just as other [Jekyll themes][1].
+2. 操作简单易懂
 
-[Fork][3] this repository and add your markdown posts to the `_posts` folder.
+   > 界面设计简洁明了，并且配有算法解释和资料，有助于了解学习。
 
-### Deploy Locally with Jekyll Serve
+3. 部署方式简单灵活
 
-This theme can be ran locally using Ruby and Gemfiles.
+   > 程序支持灵活的部署方式，包括单机模式和C/S模式。单机模式在授权的电脑中运行。C/S模式支持脱机使用。
 
-[Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll) - GitHub
+4. 准确
 
-## Full-text search
+   > 算法根据标准实现包括规范的参数定义，标准的输入输出格式，丰富的功能选项，并经过大量的计算结果验证。
 
-The search functionality in jekyll-gitbook theme is powered by the [gitbook-plugin-search-pro][5] plugin and is enabled by default.
+5. 功能丰富
 
-[https://sighingnow.github.io/jekyll-gitbook/?q=generated](https://sighingnow.github.io/jekyll-gitbook/?q=generated)
+   > 程序包括密码算法应用模块、流量分析模块、数据分析模块，并将三者融合，实现交叉引用快速分析。
 
-## Code highlight
+6. 易扩展、易维护
 
-The code highlight style is configurable the following entry in `_config.yaml`:
+   > 采用插件式开发，结构灵活，很容易对程序进行扩展，并且支持不同的团队并行开发。
 
-```yaml
-syntax_highlighter_style: colorful
-```
+## 4.产品功能
 
-The default code highlight style is `colorful`, the full supported styles can be found from [the rouge repository][6]. Customized
-style can be added to [./gitbook/rouge/](./gitbook/rouge/).
+* #### 密码应用
 
-## How to generate TOC
+  1. 基础算法
 
-The jekyll-gitbook theme leverages [jekyll-toc][4] to generate the *Contents* for the page.
-The TOC feature is not enabled by default. To use the TOC feature, modify the TOC
-configuration in `_config.yml`:
+     > 对称密钥算法、分组密码的模式、非对称密钥算法、哈希算法、消息认证码MAC、签名验签等
 
-```yaml
-toc:
-    enabled: true
-    h_min: 1
-    h_max: 3
-```
+  2. 应用场景
 
-## License
+     > 密钥协商、秘密共享、密码协议、数字信封、口令加密、密码文件、时间戳协议、JWT解析、证书操作等。
 
-This work is open sourced under the Apache License, Version 2.0.
+  3. 周边功能
 
-Copyright 2019 Tao He.
+     > 编码算法、压缩算法、格式转换、Padding填充算法、ASN.1抽象语法标记的数据解析、OID对象标识符的识别、TLV 格式解析等。
 
-[1]: https://pages.github.com
-[2]: https://pages.github.com/themes
-[3]: https://github.com/sighingnow/jekyll-gitbook/fork
-[4]: https://github.com/allejo/jekyll-toc
-[5]: https://github.com/gitbook-plugins/gitbook-plugin-search-pro
-[6]: https://github.com/rouge-ruby/rouge/tree/master/lib/rouge/themes
+  4. 客户端模拟器
+
+     > TLS客户端模拟与检测、SSH客户端模拟与检测、WireGuard模拟与检测、SFTP模拟与检测等。
+
+* #### 流量分析
+
+  1. 流量导入
+
+     > 支持直接抓包或数据包导入的方式。直接抓包支持包过滤语法，支持混杂模式；支持流量动态分析。
+
+  2. 分析插件
+
+     > 通过勾选分析插件的方式进行流量分析，已有的插件包括文件提取插件，鉴别信息提取插件，协议分析插件等
+
+  3. 展示插件
+
+     > 支持分析结果的图形化展示功能，如自动化绘制网络拓扑图，会话自动分组展示，文件内容展示，鉴别信息列表展示等。
+
+  4. 关联分析
+
+     > 支持分析结果关联分析功能，如涉及密码应用功能的信息可直接关联密码应用模块，涉及数据分析功能的信息可直接关联数据分析模块
+
+* #### 数据分析
+
+  1. 数据格式
+
+     > 支持密码应用的各种数据格式的分析功能，OID信息翻译，数据类型猜测（后续提供）等。
+
+  2. 文件格式
+
+     > 支持对文件哈希分析，文件格式分析，文件格式转换等日常功能。
+
+  3. 分组分析
+
+     > 支持将同类型或关联类型的数据分析功能合并执行。便于快速确定数据类型，缩小分析范围。
+
+  4. 帮助信息
+
+     > 工具箱中包含大量的参考资料，标准文件，对于了解密码应用，了解数据定义等，帮助很大。
+
+## 其它
+
+其它产品:[新渡-国密安全WEB网关（GMSWG）](https://www.ailawuyou.com/GMPortalDocs/)
