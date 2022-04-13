@@ -2,6 +2,7 @@
 * 1.算法功能演示
 	* [1.1 测试](/_pages/02yingyong.md)
 	* [1.2 测试](/_pages/test.md)
+	* [1.3 功能测试](/_pages/某某功能测试.md)
 * 2.流量分析功能演示
   * [2.1 测试](/_pages/02yingyong.md)
   * [2.2 测试](/_pages/test.md)
