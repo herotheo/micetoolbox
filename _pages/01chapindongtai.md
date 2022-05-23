@@ -79,18 +79,18 @@
   > * usb恢复抓取功能 目前不支持筛选分析
   > * 流量分析新增ipsec_vpn分析
 
-* #### 3.3.0.9   <span style="font-size:70%;color:gray">2022年10月15日</span>
+* #### 3.3.0.9   <span style="font-size:70%;color:gray">2021年10月15日</span>
 
   > * 数据分析中的X509证书分析的更加详细
   > * TLS客户端新增支持国密套件访问
   > * 数据分析新增TLS分析
 
-* #### 3.3.08 <span style="font-size:70%;color:gray">2022年9月30日</span>
+* #### 3.3.08 <span style="font-size:70%;color:gray">2021年9月30日</span>
 
   > * 修复更新证书时的占用问题
   > * 修复PKCS7分析包问题
 
-* #### 3.3.07 <span style="font-size:70%;color:gray">2022年08月15日</span>
+* #### 3.3.07 <span style="font-size:70%;color:gray">2021年08月15日</span>
 
   > * 首页新增目录,鼠标移动至 ‘>’ 上目录自动打开，双击某一节点即可自动输入到输入框中
   > * 新增重新加载脚本按钮
@@ -104,7 +104,7 @@
   > * 数据分析新增PDF、OFD签章文件分析、时间戳请求、响应、令牌分析
   > * 修复流量分析格式不支持pcapng问题
 
-* #### 3.3.06 <span style="font-size:70%;color:gray">2022年07月15日</span>
+* #### 3.3.06 <span style="font-size:70%;color:gray">2021年07月15日</span>
 
   > * 首页搜索框支持输入中文 可将相关数据查出
   > * 数据分析输入位置新增长度显示
