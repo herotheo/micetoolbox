@@ -13,7 +13,7 @@
   * [4.1 测试](/_pages/02yingyong.md)
   * [5.2 测试](/_pages/test.md)
 * 5.数据分析功能演示
-  * [5.1 测试](/_pages/02yingyong.md)
+  * [5.1 数据可能性分析](/_pages/0501keneng.md)
   * [5.1 测试](/_pages/test.md)
 * [6.应用案例](/_pages/02yingyong.md)
 * [7.最佳实践](/_pages/03zuijia.md)
